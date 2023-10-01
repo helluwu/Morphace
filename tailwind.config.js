@@ -9,6 +9,12 @@ module.exports = {
     extend: {
       backgroundImage: {
       },
+      width: {
+        '124': '124px',
+      },
+      height: {
+        '124': '124px',
+      }
     },
   },
   plugins: [],

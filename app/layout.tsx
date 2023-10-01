@@ -29,7 +29,7 @@ export default function RootLayout({ children, }: { children: React.ReactNode })
           <div className="flex flex-wrap">
 
             <div id="logoAndName" className="flex items-center pl-8 pr-0">
-              <span className="self-center text-xl font-normal whitespace-nowrap text-white tracking-tight">Morphace</span>
+              <span className="self-center text-xl font-medium whitespace-nowrap text-white  tracking-wider">Morphace</span>
             </div>
 
             <div className={`w-full lg:block lg:w-auto ml-auto flex`}>
