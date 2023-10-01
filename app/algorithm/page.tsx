@@ -45,31 +45,33 @@ export default function Home() {
   };
 
   return (
-    <div className='pt-10'>
+    <div className='p-10'>
+
+<p className="py-10 [font-family:'Inter-Bold',Helvetica] font-bold text-black text-[32px] text-center tracking-[0] leading-[normal]">
+          Camera Capture
+        </p>
 
 
-<h2 className='text-center font-medium text-2xl text-slate-700 py-10'>Camera Capture</h2>
-
-      <div className='grid grid-cols-2 pt-10'>
+      <div className='grid grid-cols-2 pt-10  pb-20'>
 
         <div className='mx-auto'>
           
           {isFirstCameraVisible ? (
             <>
-              <button className="py-1 px-2 bg-slate-400 border-1 border-solid border-slate-800 rounded-md text-white
-              hover:border-slate-700 hover:transition hover:text-slate-700 hover:border-1 hover:border-solid hover:bg-slate-300 mx-4 "
+              <button className=" mt-2 py-2 bg-[#e4e4d0]  text-black px-4 mx-2 rounded-2xl 
+                  transition-colors hover:bg-white hover:border-2 hover:border-[#e4e4d0] hover:text-[#acac68] focus:outline-none"
                onClick={() => startCamera(firstVideoRef)}>Open First Cam</button> 
 
-              <button className="py-1 px-2 bg-slate-400 border-1 border-solid border-slate-800 rounded-md text-white
-              hover:border-slate-700 hover:transition hover:text-slate-700 hover:border-1 hover:border-solid hover:bg-slate-300 mx-4 "
+              <button className=" mt-2 py-2 bg-[#e4e4d0]  text-black px-4 mx-2 rounded-2xl 
+                  transition-colors hover:bg-white hover:border-2 hover:border-[#e4e4d0] hover:text-[#acac68] focus:outline-none"
               onClick={() => captureImage(firstVideoRef, setFirstCapturedImage)}>
                 Click
               </button>
 
             </>
           ): ''}
-          <button className="py-1 px-2 bg-slate-400 border-1 border-solid border-slate-800 rounded-md text-white
-              hover:border-slate-700 hover:transition hover:text-slate-700 hover:border-1 hover:border-solid hover:bg-slate-300 mx-4 "
+          <button className=" mt-2 py-2 bg-[#e4e4d0]  text-black px-4 mx-2 rounded-2xl 
+                  transition-colors hover:bg-white hover:border-2 hover:border-[#e4e4d0] hover:text-[#acac68] focus:outline-none"
           onClick={toggleCameraVisibility1} >
             {isFirstCameraVisible ? 'Hide First Camera' : 'Go Back' }
           </button>
@@ -89,22 +91,22 @@ export default function Home() {
         <div className='mx-auto'>
         {isSecondCameraVisible ? (
             <>
-              <button className="py-1 px-2 bg-slate-400 border-1 border-solid border-slate-800 rounded-md text-white
-              hover:border-slate-700 hover:transition hover:text-slate-700 hover:border-1 hover:border-solid hover:bg-slate-300 mx-4 "
+              <button className=" mt-2 py-2 bg-[#e4e4d0]  text-black px-4 mx-2 rounded-2xl 
+                  transition-colors hover:bg-white hover:border-2 hover:border-[#e4e4d0] hover:text-[#acac68] focus:outline-none"
               onClick={() => startCamera(secondVideoRef)}>Open Second Cam</button>
-              <button className="py-1 px-2 bg-slate-400 border-1 border-solid border-slate-800 rounded-md text-white
-              hover:border-slate-700 hover:transition hover:text-slate-700 hover:border-1 hover:border-solid hover:bg-slate-300 mx-4 "
+              <button className=" mt-2 py-2 bg-[#e4e4d0]  text-black px-4 mx-2 rounded-2xl 
+                  transition-colors hover:bg-white hover:border-2 hover:border-[#e4e4d0] hover:text-[#acac68] focus:outline-none"
               onClick={() => captureImage(secondVideoRef, setSecondCapturedImage)}>
                 Click
               </button>
             </>
           ) : (
-            <button className="py-1 px-2 bg-slate-400 border-1 border-solid border-slate-800 rounded-md text-white
-            hover:border-slate-700 hover:transition hover:text-slate-700 hover:border-1 hover:border-solid hover:bg-slate-300 mx-4 "
+            <button className=" mt-2 py-2 bg-[#e4e4d0]  text-black px-4 mx-2 rounded-2xl 
+            transition-colors hover:bg-white hover:border-2 hover:border-[#e4e4d0] hover:text-[#acac68] focus:outline-none"
             onClick={() => startCamera(secondVideoRef)}>Show Second Cam</button>
           )}
-          <button className="py-1 px-2 bg-slate-400 border-1 border-solid border-slate-800 rounded-md text-white
-              hover:border-slate-700 hover:transition hover:text-slate-700 hover:border-1 hover:border-solid hover:bg-slate-300 mx-4 "
+          <button className=" mt-2 py-2 bg-[#e4e4d0]  text-black px-4 mx-2 rounded-2xl 
+                  transition-colors hover:bg-white hover:border-2 hover:border-[#e4e4d0] hover:text-[#acac68] focus:outline-none"
           onClick={toggleCameraVisibility2}>
             {isSecondCameraVisible ? 'Hide Second Camera' : 'Go Back'}
           </button>

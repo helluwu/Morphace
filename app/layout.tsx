@@ -25,7 +25,7 @@ export default function RootLayout({ children, }: { children: React.ReactNode })
       </Head>
 
       <body>
-        <nav className=" bg-slate-600 lg:bg-opacity-70 bg-opacity-95 w-full">
+        <nav className="  bg-nav w-full">
           <div className="flex flex-wrap">
 
             <div id="logoAndName" className="flex items-center pl-8 pr-0">
@@ -39,17 +39,17 @@ export default function RootLayout({ children, }: { children: React.ReactNode })
               flex-col mx-auto text-center text-base mr-auto
               text-white font-normal whitespace-nowrap py-4 pr-8">
                 <li>
-                  <Link href="/" className={`${pathname === '/' ? ' text-lime-700' : 'text-white'} block py-2 px-4 hover:text-lime-700 transition`}>
+                  <Link href="/" className={`${pathname === '/' ? ' text-hover' : 'text-white'} block py-2 px-4 hover:text-hover transition`}>
                     PROJECT
                   </Link>
                 </li>
                 <li>
-                  <Link href="/algorithm" className={`${pathname === '/examples' ? 'text-lime-700' : 'text-white'} block py-2 px-4 hover:text-lime-700 transition`}>
+                  <Link href="/algorithm" className={`${pathname === '/examples' ? 'text-hover' : 'text-white'} block py-2 px-4 hover:text-hover transition`}>
                     TRY IT
                   </Link>
                 </li>
                 <li>
-                  <Link href="/build" className={`${pathname === '/build' ? 'text-lime-700' : 'text-white'} block py-2 px-4 hover:text-lime-700 transition`}>
+                  <Link href="/build" className={`${pathname === '/build' ? 'text-hover' : 'text-white'} block py-2 px-4 hover:text-hover transition`}>
                     ABOUT
                   </Link>
                 </li>
@@ -58,10 +58,29 @@ export default function RootLayout({ children, }: { children: React.ReactNode })
           </div>
         </nav>
 
+        </body>
+
         {children}
 
-      </body>
-
+<footer className="bg-white rounded-lg shadow dark:bg-gray-900 m-4">
+    <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <div className="sm:flex sm:items-center sm:justify-between">
+            <a href="/images/morph.png" className="flex items-center mb-4 sm:mb-0">
+                <img src="/images/morph.png" className=" w-1/3" alt="Flowbite Logo" />
+            </a>
+            <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+                <li>
+                    <a href="/build" className="mr-4 hover:underline md:mr-6 ">About</a>
+                </li>
+                <li>
+                    <a href="/algorithm" className="hover:underline">Try it!</a>
+                </li>
+            </ul>
+        </div>
+        <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="#" className="hover:underline">MAIS Hackaton Project</a>. All Rights Reserved.</span>
+    </div>
+</footer>
 
     </html >
   )
