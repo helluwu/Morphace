@@ -11,4 +11,6 @@ How to Run the Local Host
 
 2 - In the terminal, type "npm install" or "npm i" 
 
+4 - In the terminal, typw "npm i @material-tailwind/react"
+
 3 - In the terminal, type "npm run dev" 
