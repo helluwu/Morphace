@@ -1,4 +1,4 @@
-// File: /Users/eloisefreydier/Desktop/mais/mais2023/app/algorithm/page.tsx
+// File: /Users/axelmorancaballero/Desktop/MAIS HACKS 2023/MAIS2023/MAIS2023/MAIS2023/app/algorithm/page.tsx
 import * as entry from '../../../../app/algorithm/page.js'
 import type { ResolvingMetadata } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

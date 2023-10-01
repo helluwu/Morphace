@@ -44,7 +44,7 @@ export default function RootLayout({ children, }: { children: React.ReactNode })
                   </Link>
                 </li>
                 <li>
-                  <Link href="/algorithm" className={`${pathname === '/examples' ? 'text-hover' : 'text-white'} block py-2 px-4 hover:text-hover transition`}>
+                  <Link href="/algorithm" className={`${pathname === '/algorithm' ? 'text-hover' : 'text-white'} block py-2 px-4 hover:text-hover transition`}>
                     TRY IT
                   </Link>
                 </li>
