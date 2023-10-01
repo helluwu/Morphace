@@ -81,35 +81,12 @@ export default function Home() {
         <div className="flex w-[172px] h-[51px] items-center justify-center gap-[10px] px-[10px] py-[7px] absolute top-[1523px] left-[553px] rounded-[9px]">
 
           <Link href="/algorithm">
-                  <button className="mx-auto mt-2 bg-[#e4e4d0]  text-black py-2 px-4 rounded-2xl transition-colors hover:bg-white hover:border-2 hover:border-[#e4e4d0] hover:text-[#acac68] active:scale-95 focus:outline-none">
+                  <button className="mx-auto mt-2 py-4 bg-[#e4e4d0]  text-black px-6 rounded-2xl 
+                  transition-colors hover:bg-white hover:border-2 hover:border-[#e4e4d0] hover:text-[#acac68] active:scale-95 focus:outline-none">
                     Get Started
                   </button>
                 </Link>
                 
-        </div>
-        <div className="absolute w-[1280px] h-[234px] top-[1666px] left-0 bg-[#e4e4d0]">
-          <img
-            className="absolute w-[1037px] h-[3px] top-[152px] left-[111px] object-cover"
-            alt="Line"
-            src="line-1.svg"
-          />
-          <div className="absolute top-[92px] left-[111px] [font-family:'Roboto-Medium',Helvetica] font-medium text-[#141719] text-[14px] tracking-[0] leading-[24px] whitespace-nowrap">
-            ©2023&nbsp;&nbsp;Morphace
-          </div>
-          <div className="inline-flex items-center justify-center gap-[10px] p-[10px] absolute top-[83px] left-[1037px] bg-black rounded-[7px]">
-            <div className="relative w-fit mt-[-1.00px] [font-family:'Roboto-Medium',Helvetica] font-medium text-white text-[14px] tracking-[0] leading-[24px] whitespace-nowrap">
-              Purchase Now
-            </div>
-          </div>
-          <div className="absolute top-[184px] left-[453px] [font-family:'Roboto-Medium',Helvetica] font-medium text-black text-[14px] tracking-[0] leading-[24px] whitespace-nowrap">
-            Home
-          </div>
-          <div className="absolute top-[184px] left-[621px] [font-family:'Roboto-Medium',Helvetica] font-medium text-black text-[14px] tracking-[0] leading-[24px] whitespace-nowrap">
-            About
-          </div>
-          <div className="absolute top-[184px] left-[789px] [font-family:'Roboto-Medium',Helvetica] font-medium text-black text-[14px] tracking-[0] leading-[24px] whitespace-nowrap">
-            Contact
-          </div>
         </div>
       </div>
     </div>
