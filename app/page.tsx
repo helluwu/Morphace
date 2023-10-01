@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 export default function Home() {
@@ -77,10 +78,14 @@ export default function Home() {
             Yes your information is safe with us. We do not publish photos, nor your information to the public.
           </span>
         </p>
-        <div className="flex w-[172px] h-[51px] items-center justify-center gap-[10px] px-[10px] py-[7px] absolute top-[1523px] left-[553px] bg-[#e4e4d0] rounded-[9px]">
-          <div className="relative w-fit [font-family:'Inter-Regular',Helvetica] font-normal text-black text-[24px] text-center tracking-[0] leading-[normal]">
-            Get Started
-          </div>
+        <div className="flex w-[172px] h-[51px] items-center justify-center gap-[10px] px-[10px] py-[7px] absolute top-[1523px] left-[553px] rounded-[9px]">
+
+          <Link href="/algorithm">
+                  <button className="mx-auto mt-2 bg-[#e4e4d0]  text-black py-2 px-4 rounded-2xl transition-colors hover:bg-white hover:border-2 hover:border-[#e4e4d0] hover:text-[#acac68] active:scale-95 focus:outline-none">
+                    Get Started
+                  </button>
+                </Link>
+                
         </div>
         <div className="absolute w-[1280px] h-[234px] top-[1666px] left-0 bg-[#e4e4d0]">
           <img
